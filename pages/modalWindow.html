@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="../styles/modalStyle.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="buttons">
+    <a href="../index.html"><button class="button">Go to original page :D</button></a>
+    <a href="../pages/trafficLight.html"><button class="button">Go to page with traffic light :D</button></a>
+</div>
+
+<button class="button" onclick="openModal()">Відкрити</button>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <button class="button" onclick="closeModal()">Закрити</button>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        document.getElementById("modal").style.display = "block"; /* Відображаємо модальне вікно */
+    }
+
+    function closeModal() {
+        document.getElementById("modal").style.display = "none"; /* Ховаємо модальне вікно */
+    }
+</script>
+
+</body>
+</html>

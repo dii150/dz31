@@ -1,0 +1,42 @@
+body {
+    background-color: lemonchiffon;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background: url("../images/img.jpg") center center;
+    margin: 15% auto;
+    padding: 20px;
+    border: 10px solid #4caf50;
+    width: 50%;
+    height: 30%;
+}
+
+.button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttons {
+    position: absolute;
+    right: 10px;
+}

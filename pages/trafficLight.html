@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="../styles/trafficStyle.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="buttons">
+    <a href="../index.html">
+        <button class="button">Go to original page :D</button>
+    </a>
+    <a href="../pages/modalWindow.html">
+        <button class="button">Go to page with modal window :D</button>
+    </a>
+</div>
+
+<div class="traffic">
+    <div class="trafficLight">
+        <div class="trafficCircle red"></div>
+        <div class="trafficCircle yellow"></div>
+        <div class="trafficCircle green"></div>
+    </div>
+    <button onclick="changeLight()" class="button">
+        Change light!
+    </button>
+</div>
+
+
+
+<script>
+
+    function changeLight() {
+        const redLight = document.getElementsByClassName('red')[0];
+        const yellowLight = document.getElementsByClassName('yellow')[0];
+        const greenLight = document.getElementsByClassName('green')[0];
+
+        if (redLight.style.backgroundColor === "red") {
+            redLight.style.backgroundColor = "transparent";
+            yellowLight.style.backgroundColor = "yellow";
+            greenLight.style.backgroundColor = "transparent";
+        } else if (yellowLight.style.backgroundColor === 'yellow') {
+            redLight.style.backgroundColor = "transparent";
+            yellowLight.style.backgroundColor = "transparent";
+            greenLight.style.backgroundColor = "green";
+        } else if (greenLight.style.backgroundColor === 'green') {
+            redLight.style.backgroundColor = "red";
+            yellowLight.style.backgroundColor = "transparent";
+            greenLight.style.backgroundColor = "transparent";
+        } else {
+            redLight.style.backgroundColor = "red";
+            yellowLight.style.backgroundColor = "transparent";
+            greenLight.style.backgroundColor = "transparent";
+        }
+    }
+
+</script>
+</body>
+</html>
